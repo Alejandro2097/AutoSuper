@@ -32,14 +32,17 @@ export class VehiculosComponent implements OnInit {
     console.log(this.Carros);
     
   }
-  addCarro(carrito: Array<Carro>):void{
+  addCarro():void{
 
-    console.log(carrito);
-    this.carroView = Object.assign({}, this.carro);
-    this.carros.push(this.carroView);
-}
+  }
   deleteCarro():void{
 
   }
-  
+  editCarro():void{
+
+  }
+  updateCarro():void{
+
+  }
+
 }

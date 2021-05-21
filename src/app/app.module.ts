@@ -7,13 +7,15 @@ import { HomeComponent } from './home/home.component';
 import { ProveedoresComponent } from './proveedores/proveedores.component';
 import { ClientesComponent } from './clientes/clientes.component';
 import { CarroService } from './services/carro.service';
+import { VehiculosComponent } from './taller/vehiculos/vehiculos.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     ProveedoresComponent,
-    ClientesComponent
+    ClientesComponent,
+    VehiculosComponent
   ],
   imports: [
     BrowserModule,

@@ -24,24 +24,22 @@ export class VehiculosComponent implements OnInit {
       this.carroView = this.carro;
   }
   onSubmit(form:any) {
-    console.log("Works");  
-     
+    console.log(this._carroService.getCarro());  
+     this._carroService.addCarro(form);
   }
   ngOnInit(): void {
     this.Carros = this._carroService.getCarro();
+    console.log(this.Carros);
     
   }
-  addCarro():void{
+  addCarro(carrito: Array<Carro>):void{
 
-  }
+    console.log(carrito);
+    this.carroView = Object.assign({}, this.carro);
+    this.carros.push(this.carroView);
+}
   deleteCarro():void{
 
   }
-  editCarro():void{
-
-  }
-  updateCarro():void{
-
-  }
-
+  
 }
